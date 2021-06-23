@@ -1,5 +1,5 @@
 
-## Queue
+## List
 **Doubly linked list**
 
 #### Language:
