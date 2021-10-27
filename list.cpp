@@ -82,23 +82,6 @@ bool List<type>::popFront(type *obj){
 }
 
 template <class type>
-bool List<type>::popBack(type *obj){
-    if(!front){
-        return false;
-    }
-
-    Node<type> *P = back;
-
-    back = back->prev;
-    if(!back){
-        front = nullptr;
-    }
-    Node<type>::desmontaNode(P, obj);
-    n--;
-    return true;
-}
-
-template <class type>
 bool List<type>::getFront(type *obj){
     if(!front){
         return false;
